@@ -114,30 +114,30 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PSCRN
-  - F7
-  - F8
-  - F9
-  - F12
+  - $$mdi:keyboard-f7$$
+  - $$mdi:keyboard-f8$$
+  - $$mdi:keyboard-f9$$
+  - $$mdi:keyboard-f12$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - SLCK
-  - F4
-  - F5
-  - F6
-  - F11
+  - $$mdi:keyboard-f4$$
+  - $$mdi:keyboard-f5$$
+  - $$mdi:keyboard-f6$$
+  - $$mdi:keyboard-f11$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PAUSE BREAK
-  - F1
-  - F2
-  - F3
-  - F10
+  - $$mdi:keyboard-f1$$
+  - $$mdi:keyboard-f2$$
+  - $$mdi:keyboard-f3$$
+  - $$mdi:keyboard-f10$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -182,12 +182,12 @@ layers:
   Media:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT CLR ALL
+  - $$mdi:bluetooth-off$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT CLR ALL
+  - $$mdi:bluetooth-off$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:skip-previous$$
