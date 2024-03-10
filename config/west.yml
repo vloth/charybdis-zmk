@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: a261326b31cb6d3d14a8539bb693da5a068c64c8
+      revision: feat/pointers-move-scroll
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: inorichi
