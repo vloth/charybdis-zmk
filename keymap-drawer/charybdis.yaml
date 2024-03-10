@@ -32,117 +32,81 @@ layers:
   - {t: /, h: Pointer}
   - {t: '$$mdi:keyboard-esc$$', h: Media}
   - {t: '$$mdi:keyboard-space$$', h: Navigation}
-  - {t: '$$mdi:keyboard-tab$$', h: Function}
-  - {t: '$$mdi:keyboard-return$$', h: Symbol}
-  - {t: '$$mdi:backspace$$', h: Numeral}
+  - {t: Numeral, h: sticky}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: Symbol, h: sticky}
   Numeral:
-  - '['
-  - '7'
-  - '8'
-  - '9'
-  - ']'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - ''''
-  - '4'
-  - '5'
-  - '6'
-  - '='
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
-  - '`'
-  - '1'
-  - '2'
-  - '3'
-  - \
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - .
-  - '0'
-  - '-'
-  - {t: ▽, type: trans}
-  - {type: held}
-  Symbol:
-  - '{'
-  - '&'
-  - '*'
-  - (
-  - '}'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '"'
-  - $
-  - '%'
-  - ^
-  - +
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
-  - '~'
-  - '!'
-  - '@'
-  - '#'
-  - '|'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - (
-  - )
-  - _
-  - {type: held}
-  - {t: ▽, type: trans}
-  Function:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PSCRN
   - $$mdi:keyboard-f7$$
   - $$mdi:keyboard-f8$$
   - $$mdi:keyboard-f9$$
   - $$mdi:keyboard-f12$$
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
-  - SLCK
+  - '7'
+  - '8'
+  - '9'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - $$mdi:keyboard-f4$$
   - $$mdi:keyboard-f5$$
   - $$mdi:keyboard-f6$$
   - $$mdi:keyboard-f11$$
   - {t: ▽, type: trans}
+  - '4'
+  - '5'
+  - '6'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PAUSE BREAK
   - $$mdi:keyboard-f1$$
   - $$mdi:keyboard-f2$$
   - $$mdi:keyboard-f3$$
   - $$mdi:keyboard-f10$$
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  Symbol:
+  - '~'
+  - '&'
+  - '*'
+  - {t: ▽, type: trans}
+  - +
+  - {t: ▽, type: trans}
+  - '{'
+  - '}'
+  - {t: ▽, type: trans}
+  - '|'
+  - '-'
+  - $
+  - '%'
+  - ^
+  - '='
+  - {t: ▽, type: trans}
+  - (
+  - )
+  - {t: ▽, type: trans}
+  - ''''
+  - _
+  - '!'
+  - '@'
+  - '#'
+  - '`'
+  - {t: ▽, type: trans}
+  - '['
+  - ']'
+  - {t: ▽, type: trans}
+  - \
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   Navigation:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -153,17 +117,17 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - $$mdi:backspace-reverse-outline$$
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -178,7 +142,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: ▽, type: trans}
   Media:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -327,7 +291,7 @@ combos:
 - p: [1, 2]
   k: $$mdi:keyboard-tab$$
   l: [Base]
-- p: [10, 11]
+- p: [11, 12]
   k: $$mdi:keyboard-esc$$
   l: [Base]
 - p: [6, 7]
@@ -350,4 +314,10 @@ combos:
   l: [Base]
 - p: [21, 22]
   k: '&mkp LCLK'
+  l: [Base]
+- p: [22, 23]
+  k: '&mkp RCLK'
+  l: [Base]
+- p: [12, 22]
+  k: '&mkp MCLK'
   l: [Base]

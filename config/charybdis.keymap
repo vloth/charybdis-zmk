@@ -7,12 +7,15 @@
 #define BASE 0
 #define NUM 1
 #define SYM 2
-#define FUN 3
-#define NAV 4
-#define MED 5
-#define POI 6
-#define SCR 7
-#define SNI 8
+#define NAV 3
+#define MED 4
+#define POI 5
+#define SCR 6
+#define SNI 7
+
+&sl {
+  release-after-ms = <250>;
+};
 
 &mt {
     tapping-term-ms = <200>;
@@ -60,60 +63,50 @@
         Base {
             label = "Base";
             bindings = <
-              &kp       Q  &kp       W  &kp        E  &kp        R  &kp T                &kp Y  &kp        U  &kp        I  &kp       O  &kp               P  
-              &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G                &kp H  &hml RSHFT J  &hml RCTRL K  &hml RALT L  &hml RGUI SEMICOLON  
-              &lt   POI Z  &kp       X  &kp        C  &kp        V  &kp B                &kp N  &kp        M  &kp    COMMA  &kp     DOT  &lt POI SLASH
-                                        &lt MED ESC  &lt NAV SPACE  &lt FUN TAB   &lt SYM ENTER  &lt NUM BACKSPACE
+              &kp       Q  &kp       W  &kp        E  &kp        R  &kp T        &kp Y  &kp        U  &kp        I  &kp       O  &kp               P  
+              &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H  &hml RSHFT J  &hml RCTRL K  &hml RALT L  &hml RGUI SEMICOLON  
+              &lt   POI Z  &kp       X  &kp        C  &kp        V  &kp B        &kp N  &kp        M  &kp    COMMA  &kp     DOT  &lt POI SLASH
+                                        &lt MED ESC  &lt NAV SPACE  &sl NUM      &kp ENTER &sl SYM
             >;
         };
 
         Numeral {
             label = "Numeral";
             bindings = <
-              &kp LBKT     &kp N7       &kp N8        &kp N9        &kp RBKT             &trans &trans        &trans        &trans       &kp BACKSPACE 
-              &kp APOS     &kp N4       &kp N5        &kp N6        &kp EQUAL            &trans &kp RSHFT     &kp RCTRL     &kp RALT     &kp RGUI  
-              &kp GRAVE    &kp N1       &kp N2        &kp N3        &kp BSLH             &trans &trans        &trans        &trans       &trans  
-                                                &kp DOT     &kp N0      &kp MINUS     &trans       &trans
+                        &trans  &kp F7  &kp F8  &kp F9  &kp F12        &trans  &kp N7  &kp N8  &kp N9  &trans
+                        &trans  &kp F4  &kp F5  &kp F6  &kp F11        &trans  &kp N4  &kp N5  &kp N6  &trans
+                        &trans  &kp F1  &kp F2  &kp F3  &kp F10        &kp N0  &kp N1  &kp N2  &kp N3  &trans
+                                        &trans  &trans  &trans         &trans  &trans
             >;
         };
 
         Symbol {
             label = "Symbol";
             bindings = <
-              &kp LBRC     &kp AMPS     &kp STAR      &kp LPAR      &kp RBRC             &trans &trans        &trans        &trans       &trans
-              &kp DQT      &kp DLLR     &kp PRCNT     &kp CARET     &kp PLUS             &trans &kp RSHIFT    &kp RCTRL     &kp RALT     &kp RGUI
-              &kp TILDE    &kp EXCL     &kp AT        &kp HASH      &kp PIPE             &trans &trans        &trans        &trans       &trans
-                                                &kp LPAR    &kp RPAR     &kp UNDER     &trans       &trans
-            >;
-        };
-
-        Function {
-            label = "Function";
-            bindings = <
-              &trans       &trans       &trans        &trans        &trans               &kp PSCRN        &kp F7   &kp F8   &kp F9       &kp F12
-              &kp LGUI     &kp LALT     &kp LCTRL     &kp LSHFT     &trans               &kp SLCK         &kp F4   &kp F5   &kp F6       &kp F11
-              &trans       &trans       &trans        &trans        &trans               &kp PAUSE_BREAK  &kp F1   &kp F2   &kp F3       &kp F10
-                                        &trans        &trans        &trans               &trans           &trans
+              &kp TILDE &kp AMPS  &kp STAR   &trans    &kp PLUS        &trans &kp LBRC  &kp RBRC  &trans  &kp PIPE
+              &kp MINUS &kp DLLR  &kp PRCNT  &kp CARET &kp EQUAL       &trans &kp LPAR  &kp RPAR  &trans  &kp APOS
+              &kp UNDER &kp EXCL  &kp AT     &kp HASH  &kp GRAVE       &trans &kp LBKT  &kp RBKT  &trans  &kp BSLH
+                                  &trans     &trans    &trans          &trans &trans
             >;
         };
 
         Navigation {
             label = "Navigation";
             bindings = <
-              &trans       &trans       &trans        &trans        &trans               &trans    &trans         &trans       &trans    &trans
-              &kp LGUI     &kp LALT     &kp LCTRL     &kp LSHFT     &trans               &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT &kp CAPSLOCK
-              &trans       &trans       &trans        &trans        &trans               &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END   &kp INS
-                                        &trans        &trans        &trans               &trans    &kp DELETE
+                         &trans  &trans  &trans  &trans  &trans         &trans    &trans         &trans       &trans    &kp DELETE
+                         &trans  &trans  &trans  &trans  &trans         &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT &kp BACKSPACE
+                         &trans  &trans  &trans  &trans  &trans         &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END   &kp INS
+                                         &trans  &trans  &trans         &trans    &trans
             >;
         };
 
         Media {
             label = "Media";
             bindings = <
-              &trans       &trans       &bt BT_CLR_ALL &trans       &trans               &trans      &trans        &bt BT_CLR_ALL  &trans        &trans
-              &kp C_PREV   &kp C_VOL_DN &kp C_MUTE     &kp C_VOL_UP &kp C_NEXT           &kp C_PREV  &kp C_VOL_DN  &kp C_MUTE      &kp C_VOL_UP  &kp C_NEXT
-              &trans       &trans       &trans         &trans       &trans               &trans      &trans        &trans          &trans        &trans
-                                        &trans    &kp C_PLAY_PAUSE     &kp C_STOP     &kp C_STOP       &kp C_PLAY_PAUSE
+              &trans     &trans        &bt BT_CLR_ALL &trans       &trans            &trans      &trans        &bt BT_CLR_ALL  &trans        &trans
+              &kp C_PREV &kp C_VOL_DN  &kp C_MUTE     &kp C_VOL_UP &kp C_NEXT        &kp C_PREV  &kp C_VOL_DN  &kp C_MUTE      &kp C_VOL_UP  &kp C_NEXT
+              &trans     &trans        &trans         &trans       &trans            &trans      &trans        &trans          &trans        &trans
+                                       &trans    &kp C_PLAY_PAUSE  &kp C_STOP        &kp C_STOP  &kp C_PLAY_PAUSE
             >;
         };
 
