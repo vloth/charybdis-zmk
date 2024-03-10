@@ -45,7 +45,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - ''''
   - '4'
   - '5'
@@ -343,10 +343,10 @@ combos:
   k: )
   l: [Base]
 - p: [26, 27]
-  k: {t: '$$mdi:backspace$$', type: backspace}
+  k: $$mdi:backspace-reverse-outline$$
   l: [Base]
 - p: [27, 28]
-  k: $$mdi:backspace-reverse-outline$$
+  k: {t: '$$mdi:backspace$$', type: backspace}
   l: [Base]
 - p: [21, 22]
   k: '&mkp LCLK'
