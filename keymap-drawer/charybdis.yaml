@@ -331,10 +331,10 @@ combos:
   k: $$mdi:keyboard-esc$$
   l: [Base]
 - p: [7, 8]
-  k: {t: '$$mdi:backspace$$', type: backspace}
+  k: '['
   l: [Base]
 - p: [6, 7]
-  k: $$mdi:backspace-reverse-outline$$
+  k: ']'
   l: [Base]
 - p: [16, 17]
   k: (
@@ -343,10 +343,10 @@ combos:
   k: )
   l: [Base]
 - p: [26, 27]
-  k: '['
+  k: {t: '$$mdi:backspace$$', type: backspace}
   l: [Base]
 - p: [27, 28]
-  k: ']'
+  k: $$mdi:backspace-reverse-outline$$
   l: [Base]
 - p: [21, 22]
   k: '&mkp LCLK'
