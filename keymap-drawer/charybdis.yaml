@@ -330,6 +330,12 @@ combos:
 - p: [10, 11]
   k: $$mdi:keyboard-esc$$
   l: [Base]
+- p: [7, 8]
+  k: {t: '$$mdi:backspace$$', type: backspace}
+  l: [Base]
+- p: [6, 7]
+  k: $$mdi:backspace-reverse-outline$$
+  l: [Base]
 - p: [16, 17]
   k: (
   l: [Base]
