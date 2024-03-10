@@ -14,8 +14,7 @@
 combos {
   compatible = "zmk,combos";
 
-  COMBO(left_hand-esc, &kp ESC, 10 11, BASE, COMBO_TERM_NORMAL)
+  COMBO(esc, &kp ESC, 10 11, BASE, COMBO_TERM_NORMAL)
 
-  COMBO(right_hand-left_click, &mkp LCLK, 21 22, BASE, COMBO_TERM_SLOW)
-  COMBO(left_hand-left_click, &mkp LCLK, 27 28, BASE, COMBO_TERM_SLOW)
+  COMBO(rleftclk, &mkp LCLK, 27 28, BASE, COMBO_TERM_SLOW)
 }; 
