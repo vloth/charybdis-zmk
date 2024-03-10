@@ -1,0 +1,21 @@
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, MS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <LAYERS>; \
+    timeout-ms = <MS>; \
+    require-prior-idle-ms = <150>; \
+  };
+
+#define COMBO_TERM_FAST 14
+#define COMBO_TERM_NORMAL 20
+#define COMBO_TERM_SLOW 30
+
+combos {
+  compatible = "zmk,combos";
+
+  COMBO(left_hand-esc, &kp ESC, 10 11, BASE, COMBO_TERM_NORMAL)
+
+  COMBO(right_hand-left_click, &mkp LCLK, 21 22, BASE, COMBO_TERM_SLOW)
+  COMBO(left_hand-left_click, &mkp LCLK, 27 28, BASE, COMBO_TERM_SLOW)
+}; 

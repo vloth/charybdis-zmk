@@ -57,13 +57,15 @@ draw_config:
 
     /* color accent for combo boxes */
     rect.combo, rect.combo-separate {
-        fill: #cdf;
+        fill: #54929b;
+        stroke: #007772;
     }
 
     /* color accent for held keys */
     rect.held, rect.combo.held {
         stroke: #A65437;
         fill: #BF9278;
+        line-height: 2;
     }
 
     /* color accent for ghost (optional) keys */

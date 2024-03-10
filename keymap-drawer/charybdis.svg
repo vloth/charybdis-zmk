@@ -129,13 +129,15 @@ rect.side {
 
 /* color accent for combo boxes */
 rect.combo, rect.combo-separate {
-    fill: #cdf;
+    fill: #54929b;
+    stroke: #007772;
 }
 
 /* color accent for held keys */
 rect.held, rect.combo.held {
     stroke: #A65437;
     fill: #BF9278;
+    line-height: 2;
 }
 
 /* color accent for ghost (optional) keys */
@@ -358,6 +360,22 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:backspace"/>
 <text x="0" y="24" class="key hold">Numeral</text>
+</g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="42" y="91" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="49" y="97" height="14" width="14.0" class="combo tap glyph mdi:keyboard-esc"/>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="98" y="130" width="28" height="26" class="combo"/>
+<text x="112" y="144" class="combo tap">
+<tspan x="112" dy="-0.6em">&amp;mkp</tspan><tspan x="112" dy="1.2em">LCLK</tspan>
+</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="602" y="130" width="28" height="26" class="combo"/>
+<text x="616" y="144" class="combo tap">
+<tspan x="616" dy="-0.6em">&amp;mkp</tspan><tspan x="616" dy="1.2em">LCLK</tspan>
+</text>
 </g>
 </g>
 </g>

@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+#define BASE 0
 #define NUM 1
 #define SYM 2
 #define FUN 3
@@ -21,7 +22,7 @@
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
 
-    combos { compatible = "zmk,combos"; };
+    #include "combos.dtsi"
 
     behaviors {
         hml: homewrow_mods_left {

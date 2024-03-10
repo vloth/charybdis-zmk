@@ -323,3 +323,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [10, 11]
+  k: $$mdi:keyboard-esc$$
+  l: [Base]
+- p: [21, 22]
+  k: '&mkp LCLK'
+  l: [Base]
+- p: [27, 28]
+  k: '&mkp LCLK'
+  l: [Base]
