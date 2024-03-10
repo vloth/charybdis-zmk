@@ -330,10 +330,10 @@ combos:
 - p: [10, 11]
   k: $$mdi:keyboard-esc$$
   l: [Base]
-- p: [7, 8]
+- p: [6, 7]
   k: '['
   l: [Base]
-- p: [6, 7]
+- p: [7, 8]
   k: ']'
   l: [Base]
 - p: [16, 17]
