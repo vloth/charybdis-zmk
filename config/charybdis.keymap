@@ -22,8 +22,6 @@
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
 
-    #include "combos.dtsi"
-
     behaviors {
         hml: homewrow_mods_left {
             compatible = "zmk,behavior-hold-tap";
