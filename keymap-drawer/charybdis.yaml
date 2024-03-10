@@ -324,6 +324,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
+- p: [1, 2]
+  k: $$mdi:keyboard-tab$$
+  l: [Base]
 - p: [10, 11]
   k: $$mdi:keyboard-esc$$
   l: [Base]
@@ -333,12 +336,12 @@ combos:
 - p: [17, 18]
   k: )
   l: [Base]
-- p: [20, 21]
-  k: '&mkp LBRC'
-  l: [Base]
-- p: [21, 22]
-  k: '&mkp RBRC'
+- p: [26, 27]
+  k: '['
   l: [Base]
 - p: [27, 28]
+  k: ']'
+  l: [Base]
+- p: [21, 22]
   k: '&mkp LCLK'
   l: [Base]

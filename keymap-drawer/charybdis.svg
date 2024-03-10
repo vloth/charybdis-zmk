@@ -362,33 +362,33 @@ path.combo {
 <text x="0" y="24" class="key hold">Numeral</text>
 </g>
 <g class="combo combopos-0">
+<rect rx="6" ry="6" x="98" y="18" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="105" y="24" height="14" width="14.0" class="combo tap glyph mdi:keyboard-tab"/>
+</g>
+<g class="combo combopos-1">
 <rect rx="6" ry="6" x="42" y="91" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="49" y="97" height="14" width="14.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
-<g class="combo combopos-1">
+<g class="combo combopos-2">
 <rect rx="6" ry="6" x="546" y="74" width="28" height="26" class="combo"/>
 <text x="560" y="88" class="combo tap">(</text>
 </g>
-<g class="combo combopos-2">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="602" y="74" width="28" height="26" class="combo"/>
 <text x="616" y="88" class="combo tap">)</text>
 </g>
-<g class="combo combopos-3">
-<rect rx="6" ry="6" x="42" y="147" width="28" height="26" class="combo"/>
-<text x="56" y="160" class="combo tap">
-<tspan x="56" dy="-0.6em">&amp;mkp</tspan><tspan x="56" dy="1.2em">LBRC</tspan>
-</text>
-</g>
 <g class="combo combopos-4">
-<rect rx="6" ry="6" x="98" y="130" width="28" height="26" class="combo"/>
-<text x="112" y="144" class="combo tap">
-<tspan x="112" dy="-0.6em">&amp;mkp</tspan><tspan x="112" dy="1.2em">RBRC</tspan>
-</text>
+<rect rx="6" ry="6" x="546" y="130" width="28" height="26" class="combo"/>
+<text x="560" y="144" class="combo tap">[</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="602" y="130" width="28" height="26" class="combo"/>
-<text x="616" y="144" class="combo tap">
-<tspan x="616" dy="-0.6em">&amp;mkp</tspan><tspan x="616" dy="1.2em">LCLK</tspan>
+<text x="616" y="144" class="combo tap">]</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="98" y="130" width="28" height="26" class="combo"/>
+<text x="112" y="144" class="combo tap">
+<tspan x="112" dy="-0.6em">&amp;mkp</tspan><tspan x="112" dy="1.2em">LCLK</tspan>
 </text>
 </g>
 </g>
