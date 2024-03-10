@@ -327,8 +327,17 @@ combos:
 - p: [10, 11]
   k: $$mdi:keyboard-esc$$
   l: [Base]
+- p: [16, 17]
+  k: (
+  l: [Base]
+- p: [17, 18]
+  k: )
+  l: [Base]
+- p: [20, 21]
+  k: '&mkp LBRC'
+  l: [Base]
 - p: [21, 22]
-  k: '&mkp LCLK'
+  k: '&mkp RBRC'
   l: [Base]
 - p: [27, 28]
   k: '&mkp LCLK'

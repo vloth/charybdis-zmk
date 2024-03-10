@@ -16,6 +16,10 @@ combos {
 
   COMBO(esc, &kp ESC, 10 11, BASE, COMBO_TERM_NORMAL)
 
-  COMBO(lleftclk, &mkp LCLK, 21 22, BASE, COMBO_TERM_SLOW)
+  COMBO(lpar, &kp LPAR, 16 17, BASE, COMBO_TERM_FAST)
+  COMBO(rpar, &kp RPAR, 17 18, BASE, COMBO_TERM_FAST)
+  COMBO(lbrc, &mkp LBRC, 20 21, BASE, COMBO_TERM_FAST)
+  COMBO(rbrc, &mkp RBRC, 21 22, BASE, COMBO_TERM_FAST)
+
   COMBO(rleftclk, &mkp LCLK, 27 28, BASE, COMBO_TERM_SLOW)
 }; 
