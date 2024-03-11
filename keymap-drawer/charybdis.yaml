@@ -32,35 +32,35 @@ layers:
   - {t: /, h: Pointer}
   - {t: '$$mdi:keyboard-esc$$', h: Media}
   - {t: '$$mdi:keyboard-space$$', h: Navigation}
-  - {t: Numeral, h: sticky}
+  - {t: NumeralFunction, h: sticky}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: Symbol, h: sticky}
-  Numeral:
+  NumeralFunction:
   - {t: ▽, type: trans}
-  - $$mdi:keyboard-f7$$
-  - $$mdi:keyboard-f8$$
-  - $$mdi:keyboard-f9$$
-  - $$mdi:keyboard-f12$$
+  - F7
+  - F8
+  - F9
+  - F12
   - {t: ▽, type: trans}
   - '7'
   - '8'
   - '9'
+  - $$mdi:backspace-reverse-outline$$
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:keyboard-f4$$
-  - $$mdi:keyboard-f5$$
-  - $$mdi:keyboard-f6$$
-  - $$mdi:keyboard-f11$$
+  - F4
+  - F5
+  - F6
+  - F11
   - {t: ▽, type: trans}
   - '4'
   - '5'
   - '6'
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:keyboard-f1$$
-  - $$mdi:keyboard-f2$$
-  - $$mdi:keyboard-f3$$
-  - $$mdi:keyboard-f10$$
+  - F1
+  - F2
+  - F3
+  - F10
   - '0'
   - '1'
   - '2'
@@ -115,7 +115,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - $$mdi:keyboard-tab$$
   - {t: ▽, type: trans}
   - $$mdi:backspace-reverse-outline$$
   - {t: ▽, type: trans}
@@ -288,30 +288,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [1, 2]
-  k: $$mdi:keyboard-tab$$
-  l: [Base]
-- p: [11, 12]
-  k: $$mdi:keyboard-esc$$
-  l: [Base]
-- p: [6, 7]
-  k: '['
-  l: [Base]
-- p: [7, 8]
-  k: ']'
-  l: [Base]
-- p: [16, 17]
-  k: (
-  l: [Base]
-- p: [17, 18]
-  k: )
-  l: [Base]
-- p: [26, 27]
-  k: $$mdi:backspace-reverse-outline$$
-  l: [Base]
-- p: [27, 28]
-  k: {t: '$$mdi:backspace$$', type: backspace}
-  l: [Base]
 - p: [21, 22]
   k: '&mkp LCLK'
   l: [Base]

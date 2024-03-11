@@ -5,7 +5,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
-#define NUM 1
+#define NUFU 1
 #define SYM 2
 #define NAV 3
 #define MED 4
@@ -66,15 +66,15 @@
               &kp       Q  &kp       W  &kp        E  &kp        R  &kp T        &kp Y  &kp        U  &kp        I  &kp       O  &kp               P  
               &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H  &hml RSHFT J  &hml RCTRL K  &hml RALT L  &hml RGUI SEMICOLON  
               &lt   POI Z  &kp       X  &kp        C  &kp        V  &kp B        &kp N  &kp        M  &kp    COMMA  &kp     DOT  &lt POI SLASH
-                                        &lt MED ESC  &lt NAV SPACE  &sl NUM      &kp ENTER &sl SYM
+                                        &lt MED ESC  &lt NAV SPACE  &sl NUFU     &kp ENTER &sl SYM
             >;
         };
 
-        Numeral {
-            label = "Numeral";
+        NumeralFunction {
+            label = "Numeral/Function";
             bindings = <
-                        &trans  &kp F7  &kp F8  &kp F9  &kp F12        &trans  &kp N7  &kp N8  &kp N9  &trans
-                        &trans  &kp F4  &kp F5  &kp F6  &kp F11        &trans  &kp N4  &kp N5  &kp N6  &trans
+                        &trans  &kp F7  &kp F8  &kp F9  &kp F12        &trans  &kp N7  &kp N8  &kp N9  &kp DELETE
+                        &trans  &kp F4  &kp F5  &kp F6  &kp F11        &trans  &kp N4  &kp N5  &kp N6  &kp BACKSPACE
                         &trans  &kp F1  &kp F2  &kp F3  &kp F10        &kp N0  &kp N1  &kp N2  &kp N3  &trans
                                         &trans  &trans  &trans         &trans  &trans
             >;
@@ -93,7 +93,7 @@
         Navigation {
             label = "Navigation";
             bindings = <
-                         &trans  &trans  &trans  &trans  &trans         &trans    &trans         &trans       &trans    &kp DELETE
+                         &trans  &trans  &trans  &trans  &trans         &trans    &trans         &kp TAB      &trans    &kp DELETE
                          &trans  &trans  &trans  &trans  &trans         &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT &kp BACKSPACE
                          &trans  &trans  &trans  &trans  &trans         &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END   &kp INS
                                          &trans  &trans  &trans         &trans    &trans
