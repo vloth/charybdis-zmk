@@ -278,20 +278,6 @@ parse_config:
     BT_CLR_ALL: $$mdi:bluetooth-off$$
     BT_SEL: $$mdi:bluetooth-connect$$
 
-    # Function
-    F1: $$mdi:keyboard-f1$$
-    F2: $$mdi:keyboard-f2$$
-    F3: $$mdi:keyboard-f3$$
-    F4: $$mdi:keyboard-f4$$
-    F5: $$mdi:keyboard-f5$$
-    F6: $$mdi:keyboard-f6$$
-    F7: $$mdi:keyboard-f7$$
-    F8: $$mdi:keyboard-f8$$
-    F9: $$mdi:keyboard-f9$$
-    F10: $$mdi:keyboard-f10$$
-    F11: $$mdi:keyboard-f11$$
-    F12: $$mdi:keyboard-f12$$
-
     EXCLAMATION: '!'
     EXCL: '!'
     AT_SIGN: '@'
