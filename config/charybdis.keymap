@@ -84,7 +84,7 @@
             label = "Symbol";
             bindings = <
               &kp TILDE &kp AMPS  &kp STAR   &trans    &kp PLUS        &trans &kp LBRC  &kp RBRC  &trans  &kp PIPE
-              &kp MINUS &kp DLLR  &kp PRCNT  &kp CARET &kp EQUAL       &trans &kp LPAR  &kp RPAR  &trans  &kp APOS
+              &kp MINUS &kp DLLR  &kp PRCNT  &kp CARET &kp EQUAL       &trans &kp LPAR  &kp RPAR  &kp DQT &kp APOS
               &kp UNDER &kp EXCL  &kp AT     &kp HASH  &kp GRAVE       &trans &kp LBKT  &kp RBKT  &trans  &kp BSLH
                                   &trans     &trans    &trans          &trans &trans
             >;

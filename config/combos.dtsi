@@ -14,7 +14,7 @@
 combos {
   compatible = "zmk,combos";
 
-  COMBO(leftclick, &mkp LCLK, 21 22, BASE, COMBO_TERM_SLOW)
-  COMBO(rightclick, &mkp RCLK, 22 23, BASE, COMBO_TERM_SLOW)
-  COMBO(middleclick, &mkp MCLK, 12 22, BASE, COMBO_TERM_SLOW)
+  COMBO(leftclick, &mkp LCLK, 11 12, BASE, COMBO_TERM_SLOW)
+  COMBO(rightclick, &mkp RCLK, 21 22, BASE, COMBO_TERM_SLOW)
+  COMBO(middleclick, &mkp MCLK, 22 23, BASE, COMBO_TERM_SLOW)
 }; 
