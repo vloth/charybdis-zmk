@@ -32,10 +32,10 @@ layers:
   - {t: /, h: Pointer}
   - {t: '$$mdi:keyboard-esc$$', h: Media}
   - {t: '$$mdi:keyboard-space$$', h: Navigation}
-  - {t: NumeralFunction, h: sticky}
+  - {t: NuFu, h: sticky}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: Symbol, h: sticky}
-  NumeralFunction:
+  NuFu:
   - {t: ▽, type: trans}
   - F7
   - F8

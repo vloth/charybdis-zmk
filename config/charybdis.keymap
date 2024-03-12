@@ -70,7 +70,7 @@
             >;
         };
 
-        NumeralFunction {
+        NuFu {
             label = "Numeral/Function";
             bindings = <
                         &trans  &kp F7  &kp F8  &kp F9  &kp F12        &trans  &kp N7  &kp N8  &kp N9  &kp DELETE
