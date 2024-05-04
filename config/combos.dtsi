@@ -9,7 +9,7 @@
 
 #define COMBO_TERM_FAST 14
 #define COMBO_TERM_NORMAL 20
-#define COMBO_TERM_SLOW 30
+#define COMBO_TERM_SLOW 40
 
 combos {
   compatible = "zmk,combos";
@@ -17,4 +17,8 @@ combos {
   COMBO(leftclick, &mkp LCLK, 11 12, BASE, COMBO_TERM_SLOW)
   COMBO(rightclick, &mkp RCLK, 21 22, BASE, COMBO_TERM_SLOW)
   COMBO(middleclick, &mkp MCLK, 22 23, BASE, COMBO_TERM_SLOW)
+
+  COMBO(leftclick, &mkp LCLK, 17 18, BASE, COMBO_TERM_SLOW)
+  COMBO(rightclick, &mkp RCLK, 27 28, BASE, COMBO_TERM_SLOW)
+  COMBO(middleclick, &mkp MCLK, 26 27, BASE, COMBO_TERM_SLOW)
 }; 
