@@ -1,11 +1,11 @@
 name: Draw ZMK keymaps
 on:
   workflow_dispatch:
-  # push:
-  #   paths:
-  #     - "config/*.keymap"
-  #     - "config/*.dtsi"
-  #     - "keymap_drawer.config.yaml"
+  push:
+    paths:
+      - "config/*.keymap"
+      - "config/*.dtsi"
+      - "keymap_drawer.config.yaml"
 jobs:
   draw:
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
@@ -17,4 +17,3 @@ jobs:
       output_folder: "keymap-drawer"
       parse_args: ""
       draw_args: "charybdis:'-j config/info.json -l five_column_transform'"
-      amend_commit: true
