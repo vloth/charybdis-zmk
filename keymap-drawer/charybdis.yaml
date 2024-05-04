@@ -297,3 +297,12 @@ combos:
 - p: [22, 23]
   k: '&mkp MCLK'
   l: [Base]
+- p: [17, 18]
+  k: '&mkp LCLK'
+  l: [Base]
+- p: [27, 28]
+  k: '&mkp RCLK'
+  l: [Base]
+- p: [26, 27]
+  k: '&mkp MCLK'
+  l: [Base]

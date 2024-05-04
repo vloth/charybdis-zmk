@@ -14,11 +14,11 @@
 combos {
   compatible = "zmk,combos";
 
-  COMBO(leftclick, &mkp LCLK, 11 12, BASE, COMBO_TERM_SLOW)
-  COMBO(rightclick, &mkp RCLK, 21 22, BASE, COMBO_TERM_SLOW)
-  COMBO(middleclick, &mkp MCLK, 22 23, BASE, COMBO_TERM_SLOW)
+  COMBO(l_leftclick, &mkp LCLK, 11 12, BASE, COMBO_TERM_SLOW)
+  COMBO(l_rightclick, &mkp RCLK, 21 22, BASE, COMBO_TERM_SLOW)
+  COMBO(l_middleclick, &mkp MCLK, 22 23, BASE, COMBO_TERM_SLOW)
 
-  COMBO(leftclick, &mkp LCLK, 17 18, BASE, COMBO_TERM_SLOW)
-  COMBO(rightclick, &mkp RCLK, 27 28, BASE, COMBO_TERM_SLOW)
-  COMBO(middleclick, &mkp MCLK, 26 27, BASE, COMBO_TERM_SLOW)
+  COMBO(r_leftclick, &mkp LCLK, 17 18, BASE, COMBO_TERM_SLOW)
+  COMBO(r_rightclick, &mkp RCLK, 27 28, BASE, COMBO_TERM_SLOW)
+  COMBO(r_middleclick, &mkp MCLK, 26 27, BASE, COMBO_TERM_SLOW)
 }; 
