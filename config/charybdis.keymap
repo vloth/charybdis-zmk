@@ -5,16 +5,11 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
-#define NUFU 1
-#define SYM 2
-#define NAV 3
-#define MED 4
-#define POI 5
-#define SCR 6
-#define SNI 7
+#define LOWER 1
+#define RAISE 2
 
 &sl {
-  release-after-ms = <250>;
+    release-after-ms = <250>;
 };
 
 &mt {
@@ -23,7 +18,7 @@
 };
 
 / {
-    chosen { zmk,matrix_transform = &five_column_transform; };
+    chosen { zmk,matrix_transform = &six_four_transform; };
 
     #include "combos.dtsi"
 
@@ -63,80 +58,33 @@
         Base {
             label = "Base";
             bindings = <
-              &kp       Q  &kp       W  &kp        E  &kp        R  &kp T        &kp Y  &kp        U  &kp        I  &kp       O  &kp               P  
-              &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H  &hml RSHFT J  &hml RCTRL K  &hml RALT L  &hml RGUI SEMICOLON  
-              &lt   POI Z  &kp       X  &kp        C  &kp        V  &kp B        &kp N  &kp        M  &kp    COMMA  &kp     DOT  &lt POI SLASH
-                                        &lt MED ESC  &lt NAV SPACE  &sl NUFU     &kp ENTER &sl SYM
+                &kp ESC    &kp 1    &kp 2    &kp 3    &kp 4    &kp 5    &kp 6    &kp 7    &kp 8    &kp 9    &kp 0    &kp MINS
+                &kp TAB    &kp Q    &kp W    &kp E    &kp R    &kp T    &kp Y    &kp U    &kp I    &kp O    &kp P    &kp BSLS
+                &kp LSFT   &kp A    &kp S    &kp D    &kp F    &kp G    &kp H    &kp J    &kp K    &kp L    &kp SCLN &kp QUOT
+                &kp LCTL   &kp Z    &kp X    &kp C    &kp V    &kp B    &kp N    &kp M    &kp COMM &kp DOT  &kp SLSH &kp LALT
+                                 &kp LGUI   &kp SPC  &mo LOWER &mo RAISE &kp ENT
             >;
         };
 
-        NuFu {
-            label = "Numeral/Function";
+        Lower {
+            label = "Lower";
             bindings = <
-                &trans  &kp F7  &kp F8  &kp F9 &kp F12        &trans  &kp N7  &kp N8  &kp N9  &kp DELETE
-                &trans  &kp F4  &kp F5  &kp F6 &kp F11        &trans  &kp N4  &kp N5  &kp N6  &kp BACKSPACE
-                &trans  &kp F1  &kp F2  &kp F3 &kp F10        &trans  &kp N1  &kp N2  &kp N3  &trans
-                                &trans  &trans  &trans        &trans &kp N0 
+                &kp TILD   &kp EXLM &kp AT   &kp HASH &kp DLR  &kp PERC &kp CIRC &kp AMPR &kp ASTR &kp LPRN &kp RPRN &kp UNDS
+                &kp RGB_MOD &none    &none    &none    &none    &none    &kp LBRC &kp N7   &kp N8   &kp N9   &kp RBRC &none
+                &kp RGB_TOG &kp LGUI &kp LALT &kp LCTL &kp LSFT &none    &kp PPLS &kp N4   &kp N5   &kp N6   &kp PMNS &kp PEQL
+                &kp RGB_RMOD &none    &none    &none    &kp EE_CLR &kp QK_BOOT &kp PAST &kp N1   &kp N2   &kp N3   &kp PSLS &kp PDOT
+                                 &none      &none     &trans    &none    &trans
             >;
         };
 
-        Symbol {
-            label = "Symbol";
+        Raise {
+            label = "Raise";
             bindings = <
-              &kp TILDE &kp AMPS  &kp STAR   &trans    &kp PLUS        &trans &kp LBRC  &kp RBRC  &trans  &kp PIPE
-              &kp MINUS &kp DLLR  &kp PRCNT  &kp CARET &kp EQUAL       &trans &kp LPAR  &kp RPAR  &kp DQT &kp APOS
-              &kp UNDER &kp EXCL  &kp AT     &kp HASH  &kp GRAVE       &trans &kp LBKT  &kp RBKT  &trans  &kp BSLH
-                                  &trans     &trans    &trans          &trans &trans
-            >;
-        };
-
-        Navigation {
-            label = "Navigation";
-            bindings = <
-                         &trans  &trans  &trans  &trans  &trans         &trans    &trans         &kp TAB      &trans    &kp DELETE
-                         &trans  &trans  &trans  &trans  &trans         &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT &kp BACKSPACE
-                         &trans  &trans  &trans  &trans  &trans         &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END   &kp INS
-                                         &trans  &trans  &trans         &trans    &trans
-            >;
-        };
-
-        Media {
-            label = "Media";
-            bindings = <
-              &trans     &trans        &bt BT_CLR_ALL &trans       &trans            &trans      &trans        &bt BT_CLR_ALL  &trans        &trans
-              &kp C_PREV &kp C_VOL_DN  &kp C_MUTE     &kp C_VOL_UP &kp C_NEXT        &kp C_PREV  &kp C_VOL_DN  &kp C_MUTE      &kp C_VOL_UP  &kp C_NEXT
-              &trans     &trans        &trans         &trans       &trans            &trans      &trans        &trans          &trans        &trans
-                                       &trans    &kp C_PLAY_PAUSE  &kp C_STOP        &kp C_STOP  &kp C_PLAY_PAUSE
-            >;
-        };
-
-        Pointer {
-            label = "Pointer";
-            bindings = <
-              &trans       &trans       &trans        &trans        &trans               &trans &trans        &trans        &trans       &trans
-              &kp LGUI     &kp LALT     &kp LCTRL     &kp LSHFT     &trans               &trans &kp RSHFT     &kp RCTRL     &kp RALT     &kp RGUI
-              &trans       &mo SCR      &mo SNI       &trans        &trans               &trans &trans        &tog SNI      &tog SCR     &trans
-                                            &mkp RCLK  &mkp LCLK  &mkp MCLK         &mkp MCLK  &mkp LCLK
-            >;
-        };
-
-        Scroll {
-            label = "Scroll";
-            bindings = <
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans
-            >;
-        };
-
-        Sniper {
-            label = "Sniper";
-            bindings = <
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans
+                &kp F12    &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp F11
+                &kp MNXT   &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &kp VOLU
+                &kp MPLY   &kp LEFT &kp UP   &kp DOWN &kp RGHT &none    &none    &kp RSFT &kp RCTL &kp RALT &kp RGUI &kp MUTE
+                &kp MPRV   &kp HOME &kp PGUP &kp PGDN &kp END  &none    &kp QK_BOOT &kp EE_CLR &none    &none    &none    &kp VOLD
+                                 &trans     &trans    &none    &trans   &none
             >;
         };
     };
