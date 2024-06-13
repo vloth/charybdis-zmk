@@ -4,7 +4,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
-        # zmk,bootloadser-led = <&gpio1 7  GPIO_ACTIVE_HIGH>;
+        // zmk,bootloadser-led = <&gpio1 7  GPIO_ACTIVE_HIGH>;
     }; 
 
     vbatt: vbatt {
