@@ -1,6 +1,7 @@
 # ZMK Configuration
 
 ZMK configuration for [charybdis nano](https://github.com/Bastardkb/Charybdis/tree/main) wireless
-version with [nice!nano](https://nicekeyboards.com/nice-nano/).
+version with [nice!nano](https://nicekeyboards.com/nice-nano/) and a xiao dongle.
 
 ![keymap](keymap-drawer/charybdis.svg)
+

@@ -6,7 +6,7 @@ draw_config:
   combo_h: 26.0
   key_rx: 6.0
   key_ry: 6.0
-  n_columns: 1
+  n_columns: 2
   separate_combo_diagrams: false
   combo_diagrams_scale: 2
   inner_pad_w: 2.0
@@ -151,7 +151,7 @@ parse_config:
   trans_legend:
     t: ▽
     type: trans
-  mark_alternate_layer_activators: false
+  mark_alternate_layer_activators: true
   qmk_remove_keycode_prefix:
   - KC_
   qmk_keycode_map:
@@ -342,4 +342,5 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
-  zmk_combos: {}
+  zmk_combos: 
+    combo_capslock: {"align": "top", "offset": 0.5}
