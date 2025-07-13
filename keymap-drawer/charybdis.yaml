@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: charybdis, layout_name: five_column_transform}
 layers:
   Base:
   - Q
@@ -32,10 +33,10 @@ layers:
   - {t: /, h: Pointer}
   - {t: '$$mdi:keyboard-esc$$', h: Media}
   - {t: '$$mdi:keyboard-space$$', h: Navigation}
-  - {t: NuFu, h: sticky}
+  - {t: Numeral/Function, h: sticky}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: Symbol, h: sticky}
-  NuFu:
+  Numeral/Function:
   - {t: ▽, type: trans}
   - F7
   - F8
